@@ -1,0 +1,14 @@
+{
+  "name": "sabah-kosusu",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "pnpm --filter @sabah-kosusu/pwa dev",
+    "build": "pnpm --filter @sabah-kosusu/pwa build",
+    "build:github-pages": "pnpm --filter @sabah-kosusu/pwa build:github-pages",
+    "check": "pnpm --filter @sabah-kosusu/pwa typecheck",
+    "pc:dev": "node --env-file-if-exists=pc-backup/.env pc-backup/server.mjs",
+    "pc:backup:now": "node --env-file-if-exists=pc-backup/.env pc-backup/server.mjs --backup-now"
+  }
+}
